@@ -539,7 +539,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	position: relative;
 	top: 0;
 	left: 0;
-	height: 165px;
+	height: 200px;
 	width: 100%;
 	z-index: 5;
 	margin-bottom:20px;
@@ -860,19 +860,21 @@ ul.social-list li a i {
 }
 
 ul.contact-address {
-	display: flex; /* ใช้ Flexbox เพื่อจัด li ให้อยู่ในแถวเดียวกัน */
-    justify-content: space-between; /* ปรับระยะห่างระหว่าง li ตามความต้องการ */
-    list-style: none; /* ลบจุด Bullet ของ ul */
-    padding: 0 250px; /* ลบ Padding */
-    margin: 15px 0; /* ตั้งระยะห่างระหว่าง ul กับองค์ประกอบอื่น */
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	list-style: none;
+    padding: 0 auto;
+    margin: 15px 0;
 	white-space: nowrap;
 }
 ul.contact-address li {
-	padding: 0 10px;
+	padding: 10px 10px;
 	margin: 0;
 }
 ul.contact-address li:last-child {
-	padding-bottom: 0;
+	/* padding-bottom: 0; */
 }
 ul.contact-address li i {
 	margin-right: 10px;
